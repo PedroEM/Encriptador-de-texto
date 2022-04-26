@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <title>Encriptador</title>
 </head>
 <body>
-    
+    <main>
+        <section class="ingreso-text">
+            <textarea id="textoATraducir" placeholder="Ingrese su texto aqui"></textarea>
+            <button onclick="encriptar()">Encriptar</button>
+            <button onclick="desencriptar()">Desencriptar</button>
+        </section>
+        <section class="traduccion-text">
+            <textarea readonly="true" id="textoTraducido"></textarea>
+            <button onclick="copiar()">copiar</button>
+        </section>
+    </main>
 </body>
 </html>
