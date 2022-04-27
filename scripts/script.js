@@ -53,15 +53,16 @@ function copiar(){
     var aux = document.getElementById("textoTraducido");
     aux.select();
     document.execCommand("copy");
+    window.getSelection().removeAllRanges();
 }
 
 function mostrarTraduccion(text){
     //funcion para mostrar el texto codificado/decodificado
     if (text != ""){
-        document.getElementById("divTextoTraducido").style.display = "";
-        document.getElementById("divImagenTexto").style.display = "none";
+        document.getElementById("div-texto-traducido").style.display = "";
+        document.getElementById("texto-sin-traducir").style.display = "none";
     }else{
-        document.getElementById("divTextoTraducido").style.display = "none";
-        document.getElementById("divImagenTexto").style.display = "";
+        document.getElementById("div-texto-traducido").style.display = "none";
+        document.getElementById("texto-sin-traducir").style.display = "";
     }
 }

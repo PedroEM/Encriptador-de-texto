@@ -1,0 +1,58 @@
+body {
+    background-color: #c1cfff;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 70vh;
+    height: 70vh;
+    resize: none;
+    background-color: #c1cfff;
+    border-radius: 10%;
+    border-color: #c1cfff;
+    text-align: center;
+}
+
+#textoTraducido {
+    background-color: white;
+    border-color: white;
+}
+
+#div-texto-traducido {
+    border-radius: 10%;
+    background-color: white;
+}
+
+#texto-sin-traducir {
+    border-radius: 10%;
+    background-color: white;
+    border-color: white;
+}
+
+.botones {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    border-radius: 20%;
+    background-color: #4771ff;
+    border-color: #4771ff;
+    border-style: dashed;
+    color: white;
+    padding: 2vh;
+}
