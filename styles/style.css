@@ -22,6 +22,8 @@ textarea {
     border-radius: 10%;
     border-color: #c1cfff;
     text-align: center;
+    line-height: 10vh;
+    font-size: 5vh;
 }
 
 #textoTraducido {
