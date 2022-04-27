@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
     <title>Encriptador</title>
 </head>
 <body>
@@ -15,8 +16,15 @@
             <button onclick="desencriptar()">Desencriptar</button>
         </section>
         <section class="traduccion-text">
-            <textarea readonly="true" id="textoTraducido"></textarea>
-            <button onclick="copiar()">copiar</button>
+            <div id="divImagenTexto">
+                <img src="img/texto-sin-traducir.png" alt="imagen texto sin traducir">
+                <p><strong>Ningún mensaje fue encontrado</strong></p>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div id="divTextoTraducido" style="display: none;">
+                <textarea readonly="true" id="textoTraducido"></textarea>
+                <button onclick="copiar()">copiar</button>
+            </div>
         </section>
     </main>
 </body>

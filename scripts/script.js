@@ -27,6 +27,8 @@ function encriptar(){
                 break;
         }
     }
+
+    mostrarTraduccion(text);
 }
 
 function desencriptar(){
@@ -42,6 +44,8 @@ function desencriptar(){
     text = text.replaceAll("ufat","u");
     //asignamos el texto al textarea correspondiente
     traduccion.value = text;
+
+    mostrarTraduccion(text);
 }
 
 function copiar(){
@@ -49,4 +53,15 @@ function copiar(){
     var aux = document.getElementById("textoTraducido");
     aux.select();
     document.execCommand("copy");
+}
+
+function mostrarTraduccion(text){
+    //funcion para mostrar el texto codificado/decodificado
+    if (text != ""){
+        document.getElementById("divTextoTraducido").style.display = "";
+        document.getElementById("divImagenTexto").style.display = "none";
+    }else{
+        document.getElementById("divTextoTraducido").style.display = "none";
+        document.getElementById("divImagenTexto").style.display = "";
+    }
 }
