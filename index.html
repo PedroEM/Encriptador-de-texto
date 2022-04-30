@@ -16,8 +16,8 @@
         <div class="ingreso-text">
             <textarea id="textoATraducir" placeholder="Ingrese su texto aqui"></textarea>
             <div class="botones">
-                <button onclick="encriptar()">Encriptar</button>
-                <button onclick="desencriptar()">Desencriptar</button>
+                <button onclick="encriptar()" class="boton-en-de">Encriptar</button>
+                <button onclick="desencriptar()" class="boton-en-de">Desencriptar</button>
             </div>
         </div>
         <div id="texto-sin-traducir">
@@ -28,7 +28,7 @@
         <div id="div-texto-traducido" style="display: none;">
                 <textarea readonly="true" id="textoTraducido"></textarea>
                 <div class="botones">
-                    <button onclick="copiar()">copiar</button>
+                    <button onclick="copiar()" class="boton-cop">copiar</button>
                 </div>
         </div>
     </main>

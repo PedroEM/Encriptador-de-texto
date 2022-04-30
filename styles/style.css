@@ -58,3 +58,20 @@ button {
     color: white;
     padding: 2vh;
 }
+
+.boton-en-de:hover {
+    color: #4771ff;
+    background-color: white;
+    border-color: white;
+}
+
+.boton-cop:hover {
+    color: #4771ff;
+    background-color: #c1cfff;
+    border-color: #c1cfff;
+}
+
+.boton-cop {
+    margin-bottom: 0.5vh;
+    
+}
