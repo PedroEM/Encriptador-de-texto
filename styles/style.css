@@ -116,3 +116,29 @@ button {
         display: none;
     }
 }
+
+@media (max-width: 500px) {
+    .ingreso-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botones button {
+        margin: 0.5vh;
+    }
+
+    #textoATraducir {
+        height: 40vh;
+    }
+
+    #textoTraducido {
+        width: 50vh;
+        line-height: 5vh;
+        font-size: 3vh;
+    }
+}
