@@ -37,11 +37,12 @@ function desencriptar(){
     var traduccion = document.getElementById("textoTraducido");
     //reemplazamos las claves por las letras correspondientes
     //usamos replaceAll
-    text = text.replaceAll("ai","a");
-    text = text.replaceAll("enter","e");
-    text = text.replaceAll("imes","i");
-    text = text.replaceAll("ober","o");
-    text = text.replaceAll("ufat","u");
+    text = text.replaceAll("ai","a")
+        .replaceAll("enter","e")
+        .replaceAll("imes","i")
+        .replaceAll("ober","o")
+        .replaceAll("ufat","u")
+    ;
     //asignamos el texto al textarea correspondiente
     traduccion.value = text;
 

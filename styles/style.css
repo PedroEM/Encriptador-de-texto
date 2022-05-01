@@ -73,5 +73,46 @@ button {
 
 .boton-cop {
     margin-bottom: 0.5vh;
+}
+
+@media (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ingreso-text {
+        display: flex;
+        align-items: center;
+    }
+
+    #div-texto-traducido {
+        align-items: center;;
+    }
     
+    #textoATraducir {
+        width: 70vh;
+        height: 50vh;
+    }
+
+    #textoTraducido {
+        width: 70vh;
+        height: 15vh;
+        line-height: 5vh;
+        font-size: 3vh;
+    }
+
+    .botones {
+        margin-bottom: 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #imagen-sin-traduccion {
+        display: none;
+    }
 }
